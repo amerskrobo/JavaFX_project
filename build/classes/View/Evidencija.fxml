@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"   xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.Evidencija_ugovora_Controller" prefHeight="400" prefWidth="410" alignment="CENTER" >
+    <VBox >  
+        <TableView fx:id="table" prefWidth="400" prefHeight="300"  >
+            <columns>
+                <TableColumn fx:id="id" text="ID"></TableColumn>
+                <TableColumn fx:id="firstName" text="First Name"></TableColumn>
+                <TableColumn fx:id="lastName" text="Last Name"></TableColumn>
+                <TableColumn fx:id="brzina_protoka" text="Brzina protoka"></TableColumn>
+                <TableColumn fx:id="protok" text="Protok"></TableColumn>
+                <TableColumn fx:id="trajanje_ugovora" text="Trajanje ugovora"></TableColumn>
+            </columns>
+        </TableView>
+     <HBox  spacing="240">
+        <Button   fx:id="glavniMeni" text="Glavni Meni"  onAction="#glavniMeni" />
+        <Button   fx:id="izbrisiPaket" text="IzbrisiPaket" />
+     </HBox>
+    </VBox>
+    <stylesheets>
+        <URL value="@/View/evidencija.css"/>
+    </stylesheets>
+</GridPane>

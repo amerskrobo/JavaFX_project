@@ -1,0 +1,56 @@
+.root{
+   -fx-background-color: #373435;
+}
+#kupi,#evidencija_ugovora,#jedna,#dvije,#brzina,#protok{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-font-veight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill:white;
+    
+}
+
+.choice-box > .label{
+    -fx-text-fill: orange;
+}
+.choice-box .context-menu{
+    -fx-background-color: #373435;
+}
+.choice-box .menu-item:focused{
+     -fx-background-color: orange;
+}
+.choice-box .menu-item > .label { 
+    
+    -fx-text-fill: white; 
+}
+
+.label{
+    -fx-text-fill: white; 
+    -fx-font-size: 1.2em;
+}
+#Mbit,#GB{
+    -fx-text-fill: orange;
+}
+
+#jedna:hover,#dvije:hover{
+   -fx-border-color: orange;
+   -fx-text-fill: orange;
+}
+#jedna:selected,#dvije:selected{
+     
+     -fx-text-fill: orange;
+}
+.text-field{
+    -fx-background-color:transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: white;
+    
+}
+.text-field:hover, .text-field:focused{
+    -fx-border-color: orange;
+}
+
+#kupi:hover,#evidencija_ugovora:hover{
+    -fx-border-color: orange;
+    -fx-text-fill: orange;
+}

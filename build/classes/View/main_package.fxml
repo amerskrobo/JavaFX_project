@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<GridPane fx:id="main" xmlns:fx="http://javafx.com/fxml/1"    xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller.Internet_paketi_Controller" prefHeight="300" prefWidth="250" alignment="CENTER"  vgap="5" >
+    <children>
+        
+        <VBox alignment="TOP_LEFT"  >
+        <Label text="Odaberite brzinu paketa : "/>
+        <HBox spacing="10" >
+        <ChoiceBox fx:id="brzina" >
+        </ChoiceBox>
+        <Label fx:id="Mbit" text="Mbit"/>
+        </HBox> 
+        </VBox>
+        
+    
+    
+         <VBox GridPane.rowIndex="1"   alignment="TOP_LEFT">
+         <Label text="Odaberite ukupni protok : "/>
+         <HBox spacing="10">
+         <ChoiceBox fx:id="protok">
+        </ChoiceBox>
+          <Label fx:id="GB" text="GB" />
+         </HBox>
+        </VBox>
+    
+    
+        
+        <Label GridPane.rowIndex="2" text="Duzina ugovora izrazena u godinama :" />
+        <HBox GridPane.rowIndex="3" spacing="2"    >
+            <ToggleButton fx:id="jedna">
+                <toggleGroup>
+                    <ToggleGroup fx:id="ugovor"/> 
+                </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="dvije" toggleGroup="$ugovor"/> 
+            
+        </HBox>
+        
+        <TextField GridPane.rowIndex="4"  fx:id="name" promptText="First name" />
+        <TextField GridPane.rowIndex="5" fx:id="surname" promptText="Last name"/>
+        
+        <HBox GridPane.rowIndex="6"  spacing="35" >
+          <Button fx:id="evidencija_ugovora" text="Evidencija ugovora" onAction="#evidencijaUgovora"/>
+          <Button   fx:id="kupi" text="Kupi paket"  onAction="#kupiPaket" />
+        </HBox>
+        
+    </children>
+    <stylesheets>
+        <URL value="@/View/main_package.css"/>
+    </stylesheets>
+          
+</GridPane>
